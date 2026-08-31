@@ -15,5 +15,13 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  return <div className="min-h-screen bg-background" />;
+  return (
+    <div
+      className="min-h-screen w-full antialiased"
+      style={{
+        background:
+          "radial-gradient(circle at center, #14532d 0%, #000000 70%)",
+      }}
+    />
+  );
 }
