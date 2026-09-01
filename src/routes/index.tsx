@@ -54,7 +54,7 @@ function Index() {
         }}
       />
 
-      {/* Main Container */}
+      {/* Main Container / Phone Wrapper */}
       <div className="relative z-10 w-full max-w-[460px] h-screen md:h-[95vh] md:max-h-[920px] bg-black flex flex-col shadow-[0_0_60px_rgba(0,0,0,0.95)] md:rounded-[24px] border md:border-[rgba(29,185,84,0.15)] overflow-hidden">
         {/* Header */}
         <header className="h-16 px-4 bg-black flex items-center justify-between border-b border-[#1a1a1a] flex-shrink-0 z-20">
@@ -84,9 +84,9 @@ function Index() {
         {/* Chat Wrapper */}
         <div className="flex-1 p-3 md:p-3.5 pb-4 md:pb-4 flex flex-col bg-transparent overflow-hidden min-h-0">
           <div className="flex-1 bg-white rounded-[18px] md:rounded-[20px] shadow-[0_10px_40px_rgba(0,0,0,0.6)] flex flex-col overflow-hidden relative min-h-0 border border-white/10">
-            {/* Support Agent Header */}
+            {/* Support Agent Info Header */}
             <div
-              className="flex items-center gap-3 px-4 py-3 flex-shrink-0 border-b border-[#1DB954]/20"
+              className="flex items-center gap-3 px-4 py-3 flex-shrink-0 border-b border-[#1DB954]/20 z-10"
               style={{
                 background:
                   "linear-gradient(180deg, #f2fcf5 0%, #eaf8ef 100%)",
@@ -94,15 +94,15 @@ function Index() {
             >
               <div className="relative w-11 h-11 flex-shrink-0">
                 <img
-                  src="https://i.postimg.cc/1tLmq831/Captura-de-Tela-2026-07-08-a-s-17-22-22.png"
-                  alt="Kaytlynn W."
-                  className="w-full h-full rounded-full object-cover border-2 border-[#1DB954] shadow-[0_2px_8px_rgba(29,185,84,0.25)]"
+                  src="/isabel.jpg"
+                  alt="IsabÃ©l R."
+                  className="w-full h-full rounded-full object-cover object-top border-2 border-[#1DB954] shadow-[0_2px_8px_rgba(29,185,84,0.25)]"
                 />
               </div>
 
               <div className="flex flex-col text-left">
                 <span className="text-[#121212] font-bold text-[15px] leading-tight">
-                  Kaytlynn W.
+                  IsabÃ©l R.
                 </span>
                 <span className="text-[#1DB954] font-semibold text-[12px] flex items-center gap-1.5 mt-0.5">
                   <span className="w-2 h-2 rounded-full bg-[#1DB954] inline-block animate-pulse" />
@@ -111,13 +111,15 @@ function Index() {
               </div>
             </div>
 
-            {/* Embedded Typebot */}
-            <iframe
-              src={typebotSrc}
-              className="w-full flex-1 h-full border-none bg-white block"
-              allow="geolocation; microphone; camera; autoplay"
-              title="Spotify Support Funnel"
-            />
+            {/* Embedded Typebot Iframe with Bottom Clip to remove 'Made with Typebot' */}
+            <div className="flex-1 relative w-full h-full overflow-hidden bg-white min-h-0">
+              <iframe
+                src={typebotSrc}
+                className="w-full h-[calc(100%+45px)] -mb-[45px] border-none bg-white block"
+                allow="geolocation; microphone; camera; autoplay"
+                title="Spotify Support Funnel"
+              />
+            </div>
           </div>
         </div>
       </div>
