@@ -142,13 +142,19 @@
     color: var(--color-foreground);
   }
 }
-
-/* Universal Lovable badge & watermark suppressor */
+/* Universal Lovable and Typebot badge suppressor */
 #lovable-badge,
 [id*="lovable"],
 a[href*="lovable.dev"],
 iframe[src*="lovable.dev"],
-iframe[src*="gpteng.co"] {
+iframe[src*="gpteng.co"],
+.typebot-badge,
+[class*="typebot-badge"],
+[id*="typebot-badge"],
+a[href*="typebot.io"],
+a[href*="typebot.co"],
+typebot-standard::part(badge),
+typebot-standard::part(footer) {
   display: none !important;
   opacity: 0 !important;
   visibility: hidden !important;
