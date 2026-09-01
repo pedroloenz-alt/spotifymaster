@@ -95,14 +95,14 @@ function Index() {
               <div className="relative w-11 h-11 flex-shrink-0">
                 <img
                   src="/isabel.jpg"
-                  alt="IsabÃ©l R."
+                  alt="Isabel R."
                   className="w-full h-full rounded-full object-cover object-top border-2 border-[#1DB954] shadow-[0_2px_8px_rgba(29,185,84,0.25)]"
                 />
               </div>
 
               <div className="flex flex-col text-left">
                 <span className="text-[#121212] font-bold text-[15px] leading-tight">
-                  IsabÃ©l R.
+                  Isabel R.
                 </span>
                 <span className="text-[#1DB954] font-semibold text-[12px] flex items-center gap-1.5 mt-0.5">
                   <span className="w-2 h-2 rounded-full bg-[#1DB954] inline-block animate-pulse" />
