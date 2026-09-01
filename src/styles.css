@@ -142,3 +142,15 @@
     color: var(--color-foreground);
   }
 }
+
+/* Universal Lovable badge & watermark suppressor */
+#lovable-badge,
+[id*="lovable"],
+a[href*="lovable.dev"],
+iframe[src*="lovable.dev"],
+iframe[src*="gpteng.co"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
