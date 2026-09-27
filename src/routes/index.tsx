@@ -102,7 +102,7 @@ function Index() {
 
               <div className="flex flex-col text-left">
                 <span className="text-[#121212] font-bold text-[15px] leading-tight">
-                  Isabel R.
+                  Kaytlynn R.
                 </span>
                 <span className="text-[#1DB954] font-semibold text-[12px] flex items-center gap-1.5 mt-0.5">
                   <span className="w-2 h-2 rounded-full bg-[#1DB954] inline-block animate-pulse" />
