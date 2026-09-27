@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   const [balance, setBalance] = useState("438.77");
   const [typebotSrc, setTypebotSrc] = useState(
-    "https://typebot.co/type-spotify-pay-es-han5zk7"
+    "https://typebot.co/sp-en-u55plu4"
   );
 
   useEffect(() => {
@@ -31,7 +31,7 @@ function Index() {
       }
       if (window.location.search) {
         setTypebotSrc(
-          `https://typebot.co/type-spotify-pay-es-han5zk7${window.location.search}`
+          `https://typebot.co/sp-en-u55plu4${window.location.search}`
         );
       }
     }
